@@ -31,6 +31,8 @@ const htmlcode = (document.getElementById("htmlCode").value = `${ls}\n`);
 const csscode = (document.getElementById("cssCode").value = `${ls1}\n`);
 const jscode = (document.getElementById("jsCode").value = `${ls2}\n`);
 
+// load saved preveiw data
+window.onload = showPreview();
 function showPreview() {
   var htmlCode = document.getElementById("htmlCode").value;
   var cssCode = "" + document.getElementById("cssCode").value + "";
